@@ -1,0 +1,135 @@
+permissions:
+  open: "lchangelog.open"
+  create: "lchangelog.create"
+  admin: "lchangelog.admin"
+  reload: "lchangelog.reload"
+
+messages:
+  reload: "&6[lChangeLogs] &fPlugin has been reloaded!"
+  changeRemoved: "&6[lChangeLogs] &fChange has been removed!"
+  changeCreated: "&6[lChangeLogs] &fChange has been created!"
+  removed: "&6[lChangeLogs] &fChangeLog has been removed!"
+  created: "&6[lChangeLogs] &fChangeLog has been created! &7(%title%)"
+  noPermission: "&cNo Permission!"
+  cancel: "&6[lChangeLogs] &fAction has been cancelled!"
+  usage:
+    syntax: "&cInvalid Command Usage! &7Usage: &f/lcl %arguments%"
+    argument: "<%arg%>"
+  onlyPlayer: "&cOnly players can use this command!"
+  updateMsg:
+    1:
+      message: "update"
+    default:
+      message: "updates"
+  published:
+    - "&f"
+    - "                #F9BF24&lNEW UPDATE!"
+    - "&f"
+    - "      &fNew update has been released,"
+    - "             &fcheck &7/changelog&f!"
+    - "&f"
+  notify:
+    - "&f"
+    - "                #F9BF24&lNEW UPDATE!"
+    - "&f"
+    - "        &fYou have missed &e%amount% %update%&f,"
+    - "             &fcheck &7/changelog&f!"
+    - "&f"
+inventories:
+  main:
+    title: "Changelogs"
+    size: 45
+    items:
+      changelogs:
+        material: PAPER
+        materialPublished: MAP
+        name: "&e%title% %status%"
+        lore:
+          - ""
+          - "%changes%"
+        slots:
+          - 9
+          - 10
+          - 11
+          - 12
+          - 13
+          - 14
+          - 15
+          - 16
+          - 17
+      border:
+        material: BLACK_STAINED_GLASS_PANE
+        name: "&f "
+        slots:
+          - 0
+          - 1
+          - 2
+          - 3
+          - 4
+          - 5
+          - 6
+          - 7
+          - 8
+          - 36
+          - 37
+          - 38
+          - 39
+          - 40
+          - 41
+          - 42
+          - 43
+          - 44
+  edit:
+    title: "Changelog Editor"
+    size: 45
+    items:
+      publish:
+        material: EMERALD
+        name: "&aPublish"
+        slot: 43
+      add:
+        material: LIME_DYE
+        name: "&aAdd a change"
+        slot: 37
+      back:
+        material: BOOK
+        name: "&eMain Menu"
+        slot: 36
+      delete:
+        material: BARRIER
+        name: "&cDelete Changelog"
+        slot: 44
+      border:
+        material: BLACK_STAINED_GLASS_PANE
+        name: "&f "
+        slots:
+          - 0
+          - 1
+          - 2
+          - 3
+          - 4
+          - 5
+          - 6
+          - 7
+          - 8
+          - 38
+          - 39
+          - 40
+          - 41
+          - 42
+      changes:
+        material: PAPER
+        name: "&eChange"
+        lore:
+          - ""
+          - "&7- &f%change%"
+        slots:
+          - 9
+          - 10
+          - 11
+          - 12
+          - 13
+          - 14
+          - 15
+          - 16
+          - 17

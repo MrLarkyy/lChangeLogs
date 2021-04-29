@@ -1,0 +1,8 @@
+name: lChangeLogs
+version: ${project.version}
+main: cz.larkyy.lchangelogs.LChangeLogs
+api-version: 1.16
+commands:
+  lchangelogs:
+    aliases: [lcl,cl,changelog,changelogs,lchangelog]
+    description: A changelogs plugin
