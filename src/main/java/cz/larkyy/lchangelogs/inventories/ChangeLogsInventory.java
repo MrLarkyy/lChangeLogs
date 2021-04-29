@@ -2,6 +2,7 @@ package cz.larkyy.lchangelogs.inventories;
 
 import cz.larkyy.lchangelogs.LChangeLogs;
 import cz.larkyy.lchangelogs.handlers.ConfigHandler;
+import cz.larkyy.lchangelogs.handlers.PermissionHandler;
 import cz.larkyy.lchangelogs.objects.ChangeLogObj;
 import cz.larkyy.lchangelogs.utils.GuiUtils;
 import cz.larkyy.lchangelogs.utils.Utils;
@@ -25,7 +26,7 @@ public class ChangeLogsInventory implements InventoryHolder {
     public ChangeLogsInventory(int page, Player p) {
         this.page = page;
         this.p = p;
-        this.permission = p.hasPermission("changelogs.admin");
+        this.permission = PermissionHandler.ADMIN.has(p);
     }
 
     @Override
